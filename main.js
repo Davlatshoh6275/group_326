@@ -384,9 +384,9 @@
 
 // array methods
 
-let obj = {
-  name: "Davlatshoh",
-};
+// let obj = {
+//   name: "Davlatshoh",
+// };
 
 // obj.sername = "Pardaqulov"
 
@@ -530,9 +530,9 @@ let obj = {
 //   numbers
 // );
 
-let juft = [];
-let salom = [];
-let toq = [];
+// let juft = [];
+// let salom = [];
+// let toq = [];
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(i);
 //   console.log(arr[i]);
@@ -571,53 +571,53 @@ let toq = [];
 //   }
 // }
 
-let cars = [
-  {
-    id: Math.random(),
-    name: "Damas",
-    company: "Chevrolet",
-  },
-  {
-    id: Math.random(),
-    name: "Nexia 3",
-    company: "Ravon",
-  },
-  {
-    id: Math.random(),
-    name: "Spark",
-    company: "Ravon",
-  },
-  {
-    id: Math.random(),
-    name: "Lacetti",
-    company: "Chevrolet",
-  },
-  {
-    id: Math.random(),
-    name: "BMW x6",
-    company: "BMW",
-  },
-  {
-    id: Math.random(),
-    name: "BMW m5",
-    company: "BMW",
-  },
-];
+// let cars = [
+//   {
+//     id: Math.random(),
+//     name: "Damas",
+//     company: "Chevrolet",
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Nexia 3",
+//     company: "Ravon",
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Spark",
+//     company: "Ravon",
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Lacetti",
+//     company: "Chevrolet",
+//   },
+//   {
+//     id: Math.random(),
+//     name: "BMW x6",
+//     company: "BMW",
+//   },
+//   {
+//     id: Math.random(),
+//     name: "BMW m5",
+//     company: "BMW",
+//   },
+// ];
 
-let companyes = [
-  {
-    company: "BMW",
-    count: 0,
-  },
-  {
-    company: "Chevrolet",
-    count: 0,
-  },
-  {
-    company: "Ravon",
-    count: 0,
-  },
-];
+// let companyes = [
+//   {
+//     company: "BMW",
+//     count: 0,
+//   },
+//   {
+//     company: "Chevrolet",
+//     count: 0,
+//   },
+//   {
+//     company: "Ravon",
+//     count: 0,
+//   },
+// ];
 
 // for (let item of cars) {
 //   // console.log(item);
@@ -641,3 +641,207 @@ let companyes = [
 
 // console.log(index);
 // console.log(arr);
+
+let arr = [
+  {
+    id: Math.random(),
+    name: "Timur",
+    info: {
+      school: "235",
+      faculity: "SMM",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Imran",
+    info: {
+      school: "ne izvestno",
+      faculity: "programming",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Aminjon",
+    info: {
+      school: "444",
+      faculity: "Dizayn",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Maxmud",
+    info: {
+      school: "777",
+      faculity: "3dsmax",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Muxammad",
+    info: {
+      school: "5555",
+      faculity: "Backend",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Timur",
+    info: {
+      school: "235",
+      faculity: "SMM",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Imran",
+    info: {
+      school: "ne izvestno",
+      faculity: "programming",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Aminjon",
+    info: {
+      school: "444",
+      faculity: "Dizayn",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Maxmud",
+    info: {
+      school: "777",
+      faculity: "3dsmax",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Maxmud",
+    info: {
+      school: "777",
+      faculity: "3dsmax",
+    },
+  },
+  {
+    id: Math.random(),
+    name: "Muxammad",
+    info: {
+      school: "5555",
+      faculity: "Backend",
+    },
+  },
+];
+
+let categories = [
+  {
+    course: " SMM",
+    count: 0,
+  },
+  {
+    course: "PROGRAMMING",
+    count: 0,
+  },
+  {
+    course: "     3DSMAX",
+    count: 0,
+  },
+  {
+    course: " DIZAYN",
+    count: 0,
+  },
+  {
+    course: "   BACKEND",
+    count: 0,
+  },
+];
+
+// console.log(categories);
+
+// let obj = {
+//   a: 1,
+//   b: 2
+// }
+
+// let names = ["Alex", "Alisa", "John", "Johnson", "George"];
+// let obj = [];
+
+// for (let item of names) {
+//   let a = {};
+
+//   a.name = item;
+
+//   obj.push(a);
+// }
+
+// console.log(obj);
+
+// let b = ["a", "b", "c", "d", "e", "f", "j", "h", "r"];
+// let c = [];
+
+// for (let i = 0; i < a.length; i++) {
+//   for (let k = 0; k < b.length; k++) {
+//     let obj = {};
+//     let h = b[k]
+
+//     obj[h] = a[i];
+//     console.log(obj);
+
+//     break
+
+//   }
+
+// }
+
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let numbers = [];
+
+// for (let i = 0; i < a.length; i++) {
+//   console.log(a[i]);
+//   if (a[i] < 5) {
+//     // break;
+//     // numbers.push(a[i])
+//     // continue
+//     // console.log(a);
+//     // return console.log("salom");
+//   }
+//   // continue
+// }
+
+// console.log(numbers);
+let y = "salom";
+
+function sayHi(a, b, ...arg) {
+  console.log(a.lenght);
+  // if() {
+
+  // } else if() {
+
+  // } else {
+
+  // }
+}
+
+// y = "Hello";
+
+sayHi(
+  "Davlatshoh",
+  1,
+  255,
+  54,
+  848,
+  84,
+  8,
+  484,
+  84,
+  8,
+  48,
+  48,
+  78,
+  748,
+  8,
+  47,
+  48
+);
+
+// console.log(y);
