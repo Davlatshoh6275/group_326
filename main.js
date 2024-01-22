@@ -642,119 +642,119 @@
 // console.log(index);
 // console.log(arr);
 
-let arr = [
-  {
-    id: Math.random(),
-    name: "Timur",
-    info: {
-      school: "235",
-      faculity: "SMM",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Imran",
-    info: {
-      school: "ne izvestno",
-      faculity: "programming",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Aminjon",
-    info: {
-      school: "444",
-      faculity: "Dizayn",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Maxmud",
-    info: {
-      school: "777",
-      faculity: "3dsmax",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Muxammad",
-    info: {
-      school: "5555",
-      faculity: "Backend",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Timur",
-    info: {
-      school: "235",
-      faculity: "SMM",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Imran",
-    info: {
-      school: "ne izvestno",
-      faculity: "programming",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Aminjon",
-    info: {
-      school: "444",
-      faculity: "Dizayn",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Maxmud",
-    info: {
-      school: "777",
-      faculity: "3dsmax",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Maxmud",
-    info: {
-      school: "777",
-      faculity: "3dsmax",
-    },
-  },
-  {
-    id: Math.random(),
-    name: "Muxammad",
-    info: {
-      school: "5555",
-      faculity: "Backend",
-    },
-  },
-];
+// let arr = [
+//   {
+//     id: Math.random(),
+//     name: "Timur",
+//     info: {
+//       school: "235",
+//       faculity: "SMM",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Imran",
+//     info: {
+//       school: "ne izvestno",
+//       faculity: "programming",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Aminjon",
+//     info: {
+//       school: "444",
+//       faculity: "Dizayn",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Maxmud",
+//     info: {
+//       school: "777",
+//       faculity: "3dsmax",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Muxammad",
+//     info: {
+//       school: "5555",
+//       faculity: "Backend",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Timur",
+//     info: {
+//       school: "235",
+//       faculity: "SMM",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Imran",
+//     info: {
+//       school: "ne izvestno",
+//       faculity: "programming",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Aminjon",
+//     info: {
+//       school: "444",
+//       faculity: "Dizayn",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Maxmud",
+//     info: {
+//       school: "777",
+//       faculity: "3dsmax",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Maxmud",
+//     info: {
+//       school: "777",
+//       faculity: "3dsmax",
+//     },
+//   },
+//   {
+//     id: Math.random(),
+//     name: "Muxammad",
+//     info: {
+//       school: "5555",
+//       faculity: "Backend",
+//     },
+//   },
+// ];
 
-let categories = [
-  {
-    course: " SMM",
-    count: 0,
-  },
-  {
-    course: "PROGRAMMING",
-    count: 0,
-  },
-  {
-    course: "     3DSMAX",
-    count: 0,
-  },
-  {
-    course: " DIZAYN",
-    count: 0,
-  },
-  {
-    course: "   BACKEND",
-    count: 0,
-  },
-];
+// let categories = [
+//   {
+//     course: " SMM",
+//     count: 0,
+//   },
+//   {
+//     course: "PROGRAMMING",
+//     count: 0,
+//   },
+//   {
+//     course: "     3DSMAX",
+//     count: 0,
+//   },
+//   {
+//     course: " DIZAYN",
+//     count: 0,
+//   },
+//   {
+//     course: "   BACKEND",
+//     count: 0,
+//   },
+// ];
 
 // console.log(categories);
 
@@ -809,18 +809,18 @@ let categories = [
 // }
 
 // console.log(numbers);
-let y = "salom";
+// let y = "salom";
 
-function sayHi(a, b, ...arg) {
-  console.log(a.lenght);
-  // if() {
+// function sayHi(a, b, ...arg) {
+//   console.log(a.lenght);
+//   // if() {
 
-  // } else if() {
+//   // } else if() {
 
-  // } else {
+//   // } else {
 
-  // }
-}
+//   // }
+// }
 
 // y = "Hello";
 
@@ -844,6 +844,45 @@ function sayHi(a, b, ...arg) {
 //   48
 // );
 
-
-
 // console.log(y);
+// sayHi()
+
+// let b = 10;
+
+// function sayHi() {
+//   // let a = prompt("what is your name ?");
+//   let c = 15;
+//   b = 15;
+
+//   // console.log("hello", a);
+// }
+
+// // console.log(a);
+
+// sayHi();
+
+// function param(a, b, ...c) {
+//   console.log(a, b, c);
+// }
+
+// param(a, 25, 84, 84, 48, 487, 484, 9, 9, 48, 4, 9, 49, 4, true, false, undefined, null, "salom");
+
+// let a = +prompt("wdokdifoejr[ifm[ efj osajfp aseoipa jfp ojpesjm")
+// console.log("salom");
+
+// let numOne = +prompt("number 1");
+// let numTwo = +prompt("number 2");
+
+// function algo(a, b) {
+//   console.log(a + b, "+");
+// }
+
+// algo(numOne, numTwo);
+
+// if () {
+
+// } else if() {
+
+// } else {
+
+// }
