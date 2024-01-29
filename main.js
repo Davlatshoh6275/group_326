@@ -1055,54 +1055,54 @@
 // console.log(skidka);
 // console.log(h);
 
-1000;
+// 1000;
 
-15;
+// 15;
 
-(1000 / 100) * 15;
+// (1000 / 100) * 15;
 
-1000 - 15;
+// 1000 - 15;
 
-let discount = +prompt("Какая скидка?");
+// let discount = +prompt("Какая скидка?");
 
-let totalSale = Number;
+// let totalSale = Number;
 
-let total = Number;
+// let total = Number;
 
-let max = Object;
+// let max = Object;
 
-let min = Object;
+// let min = Object;
 
-let average = Number;
+// let average = Number;
 
-let arr = [
-  {
-    name: "Milk",
-    price: 3.25,
-  },
+// let arr = [
+//   {
+//     name: "Milk",
+//     price: 3.25,
+//   },
 
-  {
-    name: "Coffee",
-    price: 1.5,
-  },
+//   {
+//     name: "Coffee",
+//     price: 1.5,
+//   },
 
-  {
-    name: "Ice Cream",
-    price: 7.85,
-  },
+//   {
+//     name: "Ice Cream",
+//     price: 7.85,
+//   },
 
-  {
-    name: "Tomatos",
-    price: 4.14,
-  },
+//   {
+//     name: "Tomatos",
+//     price: 4.14,
+//   },
 
-  {
-    name: "Onion",
-    price: 2.25,
-  },
-];
+//   {
+//     name: "Onion",
+//     price: 2.25,
+//   },
+// ];
 
-let arr_sale = [];
+// let arr_sale = [];
 
 // 1. Сохранить самый дорогой товар в переменную`max`*
 
@@ -1120,47 +1120,109 @@ let arr_sale = [];
 
 // ТРИ ОЦЕНКИ. ЧИСТОТА КОДА, ЛОГИКА РАБОТЫ, УНИКАЛЬНОСТЬ КОДА*
 
-const setup = () => {
-  let prices = [];
-  let skidka = [];
+// const setup = () => {
+//   let prices = [];
+//   let skidka = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    prices.push(arr[i].price);
-    let maxPrice = Math.max(...prices);
-    let minPrice = Math.min(...prices);
+//   for (let i = 0; i < arr.length; i++) {
+//     prices.push(arr[i].price);
+//     let maxPrice = Math.max(...prices);
+//     let minPrice = Math.min(...prices);
 
-    skidka.push((arr[i].price / 100) * discount);
+//     skidka.push((arr[i].price / 100) * discount);
 
-    if (arr[i].price == maxPrice) {
-      max = arr[i];
-    }
+//     if (arr[i].price == maxPrice) {
+//       max = arr[i];
+//     }
 
-    if (arr[i].price == minPrice) {
-      min = arr[i];
-    }
+//     if (arr[i].price == minPrice) {
+//       min = arr[i];
+//     }
 
-    for (let item of skidka) {
-      arr[i].skidka = item;
-    }
+//     for (let item of skidka) {
+//       arr[i].skidka = item;
+//     }
+//   }
+
+//   total = prices.reduce((item, prev) => {
+//     return (item += prev);
+//   }, 0);
+
+//   let totalSkidka = skidka.reduce((item, prev) => {
+//     return (item += prev);
+//   }, 0);
+
+//   totalSale = total - totalSkidka;
+//   average = total / arr.length;
+
+//   console.log(min);
+//   console.log(max);
+//   console.log(total);
+//   console.log(totalSale);
+//   console.log(average);
+//   console.log(arr);
+// };
+
+// setup();
+
+// lesson DOM
+
+// let doc = document
+// let first = document.firstChild
+// let last = document.lastChild
+// let children = document.children
+// let childNode = document.childNodes
+// document.body
+// document.head
+
+// document.write('salom dunyo')
+
+// console.log(
+//   childNode
+// );
+
+let txtClass = document.getElementsByClassName("text");
+let txtId = document.getElementById("text");
+let txtTagname = document.getElementsByTagName("h1");
+
+// console.log(txtClass);
+// console.log(txtTagname);
+// console.log(txtId);
+
+// txtId.innerText = "salom <span>hi</span> "
+// txtId.innerHTML = "salom <span>hi</span> ";
+
+// console.log(txtId.innerText, txtId.innerHTML);
+
+// console.log(btnChange);
+
+let btnChange = document.getElementById("btnChange");
+btnChange.onclick = () => {
+  if (txtId.innerText === "salom") {
+    txtId.innerText = "hello";
+    txtId.style.color = "red"
+    txtId.style.fontSize = "30px"
+  } else {
+    txtId.innerText = "salom";
+    txtId.style.color = "green"
+    txtId.style.fontSize = "50px"
   }
-
-  total = prices.reduce((item, prev) => {
-    return (item += prev);
-  }, 0);
-
-  let totalSkidka = skidka.reduce((item, prev) => {
-    return (item += prev);
-  }, 0);
-
-  totalSale = total - totalSkidka;
-  average = total / arr.length;
-
-  console.log(min);
-  console.log(max);
-  console.log(total);
-  console.log(totalSale);
-  console.log(average);
-  console.log(arr);
 };
 
-setup();
+
+let classT = document.querySelector(".text")
+let idT = document.querySelector("#text")
+let tag = document.querySelector("h1")
+
+let allItems = document.querySelectorAll('.text')
+
+
+// console.log(
+//   classT,
+//   idT,
+//   tag
+// );
+
+console.log(allItems);
+console.log(txtClass);
+
