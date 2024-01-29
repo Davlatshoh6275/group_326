@@ -891,167 +891,276 @@
 // Сохранить количество в ключе count
 // Сохранить сами задачи в массиве-ключе arr
 
-let arr = [
-  {
-    userId: 1,
-    id: 1,
-    title: "delectus aut au`tem",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 2,
-    title: "quis ut nam facilis et officia qui",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 3,
-    title: "fugiat veniam minus",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 4,
-    title: "et porro tempora",
-    completed: true,
-  },
-  {
-    userId: 1,
-    id: 5,
-    title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 6,
-    title: "qui ullam ratione quibusdam voluptatem quia omnis",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 7,
-    title: "illo expedita consequatur quia in",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 8,
-    title: "quo adipisci enim quam ut ab",
-    completed: true,
-  },
-  {
-    userId: 1,
-    id: 9,
-    title: "molestiae perspiciatis ipsa",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 10,
-    title: "illo est ratione doloremque quia maiores aut",
-    completed: true,
-  },
-];
-let a = {
-  count: 0,
-  arr: [],
-};
+// let arr = [
+//   {
+//     userId: 1,
+//     id: 1,
+//     title: "delectus aut au`tem",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 2,
+//     title: "quis ut nam facilis et officia qui",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 3,
+//     title: "fugiat veniam minus",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 4,
+//     title: "et porro tempora",
+//     completed: true,
+//   },
+//   {
+//     userId: 1,
+//     id: 5,
+//     title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 6,
+//     title: "qui ullam ratione quibusdam voluptatem quia omnis",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 7,
+//     title: "illo expedita consequatur quia in",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 8,
+//     title: "quo adipisci enim quam ut ab",
+//     completed: true,
+//   },
+//   {
+//     userId: 1,
+//     id: 9,
+//     title: "molestiae perspiciatis ipsa",
+//     completed: false,
+//   },
+//   {
+//     userId: 1,
+//     id: 10,
+//     title: "illo est ratione doloremque quia maiores aut",
+//     completed: true,
+//   },
+// ];
+// let a = {
+//   count: 0,
+//   arr: [],
+// };
 
-let b = {
-  count: 0,
-  arr: [],
-};
+// let b = {
+//   count: 0,
+//   arr: [],
+// };
 
-// console.log(a, b);
+// // console.log(a, b);
 
-let products = [
-  {
-    id: 1,
-    name: "apple",
-    price: 5000,
-    skitka: 5,
-  },
-  {
-    id: 2,
-    name: "orange",
-    price: 4500,
-    skitka: 15,
-  },
-  {
-    id: 3,
-    name: "srowbery",
-    price: 8000,
-    skitka: 50,
-  },
-  {
-    id: 4,
-    name: "cherry",
-    price: 9500,
-    skitka: 23,
-  },
-  {
-    id: 5,
-    name: "banan",
-    price: 8560,
-    skitka: 16,
-  },
-  {
-    id: 6,
-    name: "limon",
-    price: 5000,
-    skitka: 18,
-  },
-];
+// let products = [
+//   {
+//     id: 1,
+//     name: "apple",
+//     price: 5000,
+//     skitka: 5,
+//   },
+//   {
+//     id: 2,
+//     name: "orange",
+//     price: 4500,
+//     skitka: 15,
+//   },
+//   {
+//     id: 3,
+//     name: "srowbery",
+//     price: 8000,
+//     skitka: 50,
+//   },
+//   {
+//     id: 4,
+//     name: "cherry",
+//     price: 9500,
+//     skitka: 23,
+//   },
+//   {
+//     id: 5,
+//     name: "banan",
+//     price: 8560,
+//     skitka: 16,
+//   },
+//   {
+//     id: 6,
+//     name: "limon",
+//     price: 5000,
+//     skitka: 18,
+//   },
+// ];
 
-let total = 0;
+// let total = 0;
 
-for (let item of products) {
-  //   total = total + item.price;
-  total += item.price;
-}
+// for (let item of products) {
+//   //   total = total + item.price;
+//   total += item.price;
+// }
 
 // console.log(total);
 
-let numbers = [684, 8489, 4, 894, 8, 4, 944, 4849, 4, 84, 9, 8, 4, 98, 4, 0];
+// let numbers = [684, 8489, 4, 894, 8, 4, 944, 4849, 4, 84, 9, 8, 4, 98, 4, 0];
 
-let sum = numbers.reduce((item, prev) => {
-  return (item += prev);
-}, 0);
+// let sum = numbers.reduce((item, prev) => {
+//   return (item += prev);
+// }, 0);
 
-// console.log(sum);
+// // console.log(sum);
 
-let max = Math.max(...numbers);
-let min = Math.min(...numbers);
+// let max = Math.max(...numbers);
+// let min = Math.min(...numbers);
 
-// console.log(max);
-// console.log(min);
+// // console.log(max);
+// // console.log(min);
 
-function maxName(...a) {
-  let maxN = [];
+// function maxName(...a) {
+//   let maxN = [];
 
-  for (let item of a) {
-    maxN.push(item.length);
-  }
+//   for (let item of a) {
+//     maxN.push(item.length);
+//   }
 
-  console.log(maxN);
+//   console.log(maxN);
 
-  console.log(a);
-}
+//   console.log(a);
+// }
 
-maxName("Davlatshoh", "Sarvar", "Alex");
+// maxName("Davlatshoh", "Sarvar", "Alex");
 
-let h = [
+// let h = [
+//   {
+//     name: "iPhone",
+//     price: 1250,
+//     skitka: 13,
+//   },
+// ];
+
+// let skidka = h[0].price / 100 * h[0].skitka
+// h[0].sumSkidka = h[0].price - skidka
+
+// console.log(skidka);
+// console.log(h);
+
+1000;
+
+15;
+
+(1000 / 100) * 15;
+
+1000 - 15;
+
+let discount = +prompt("Какая скидка?");
+
+let totalSale = Number;
+
+let total = Number;
+
+let max = Object;
+
+let min = Object;
+
+let average = Number;
+
+let arr = [
   {
-    name: "iPhone",
-    price: 1250,
-    skitka: 13,
+    name: "Milk",
+    price: 3.25,
+  },
+
+  {
+    name: "Coffee",
+    price: 1.5,
+  },
+
+  {
+    name: "Ice Cream",
+    price: 7.85,
+  },
+
+  {
+    name: "Tomatos",
+    price: 4.14,
+  },
+
+  {
+    name: "Onion",
+    price: 2.25,
   },
 ];
 
+let arr_sale = [];
 
-let skidka = h[0].price / 100 * h[0].skitka
-h[0].sumSkidka = h[0].price - skidka
+// 1. Сохранить самый дорогой товар в переменную`max`*
 
-console.log(skidka);
-console.log(h);
+// 2. Сохранить самый дешевый товар в переменную`min`*
+
+// 3. Сохранить общую цену без скидок в переменную`total`*
+
+// 4. Сохранить общую цену со скидкой в переменную`totalSale`*
+
+// 5. Сохранить элементы из массива arr с обновленной ценой (цена со скидкой) в переменную `arr_sale`*
+
+// 6. Сохранить в переменной `average` среднюю цену всех продуктов без скидок*
+
+// * Писать весь код в функции `setup()`*
+
+// ТРИ ОЦЕНКИ. ЧИСТОТА КОДА, ЛОГИКА РАБОТЫ, УНИКАЛЬНОСТЬ КОДА*
+
+const setup = () => {
+  let prices = [];
+  let skidka = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    prices.push(arr[i].price);
+    let maxPrice = Math.max(...prices);
+    let minPrice = Math.min(...prices);
+
+    skidka.push((arr[i].price / 100) * discount);
+
+    if (arr[i].price == maxPrice) {
+      max = arr[i];
+    }
+
+    if (arr[i].price == minPrice) {
+      min = arr[i];
+    }
+
+    for (let item of skidka) {
+      arr[i].skidka = item;
+    }
+  }
+
+  total = prices.reduce((item, prev) => {
+    return (item += prev);
+  }, 0);
+
+  let totalSkidka = skidka.reduce((item, prev) => {
+    return (item += prev);
+  }, 0);
+
+  totalSale = total - totalSkidka;
+  average = total / arr.length;
+
+  console.log(min);
+  console.log(max);
+  console.log(total);
+  console.log(totalSale);
+  console.log(average);
+  console.log(arr);
+};
+
+setup();
