@@ -1181,9 +1181,9 @@
 //   childNode
 // );
 
-let txtClass = document.getElementsByClassName("text");
-let txtId = document.getElementById("text");
-let txtTagname = document.getElementsByTagName("h1");
+// let txtClass = document.getElementsByClassName("text");
+// let txtId = document.getElementById("text");
+// let txtTagname = document.getElementsByTagName("h1");
 
 // console.log(txtClass);
 // console.log(txtTagname);
@@ -1196,26 +1196,24 @@ let txtTagname = document.getElementsByTagName("h1");
 
 // console.log(btnChange);
 
-let btnChange = document.getElementById("btnChange");
-btnChange.onclick = () => {
-  if (txtId.innerText === "salom") {
-    txtId.innerText = "hello";
-    txtId.style.color = "red"
-    txtId.style.fontSize = "30px"
-  } else {
-    txtId.innerText = "salom";
-    txtId.style.color = "green"
-    txtId.style.fontSize = "50px"
-  }
-};
+// let btnChange = document.getElementById("btnChange");
+// btnChange.onclick = () => {
+//   if (txtId.innerText === "salom") {
+//     txtId.innerText = "hello";
+//     txtId.style.color = "red"
+//     txtId.style.fontSize = "30px"
+//   } else {
+//     txtId.innerText = "salom";
+//     txtId.style.color = "green"
+//     txtId.style.fontSize = "50px"
+//   }
+// };
 
+// let classT = document.querySelector(".text")
+// let idT = document.querySelector("#text")
+// let tag = document.querySelector("h1")
 
-let classT = document.querySelector(".text")
-let idT = document.querySelector("#text")
-let tag = document.querySelector("h1")
-
-let allItems = document.querySelectorAll('.text')
-
+// let allItems = document.querySelectorAll('.text')
 
 // console.log(
 //   classT,
@@ -1223,6 +1221,58 @@ let allItems = document.querySelectorAll('.text')
 //   tag
 // );
 
-console.log(allItems);
-console.log(txtClass);
+let btn = document.querySelector(".btn");
+let btnTwo = document.querySelector(".btnTwo");
+let content = document.querySelector(".content");
+let txt = document.querySelector(".txt");
 
+let active = false;
+
+// btn.onclick = () => {
+//   txt.innerHTML = "salom"
+  // if (active == true) {
+  //   // content.style.backgroundColor = "red"
+  //   content.classList.add("colorOne");
+  //   content.classList.remove("colorTwo");
+  //   active = false;
+  // } else {
+  //   content.classList.add("colorTwo");
+  //   content.classList.remove("colorOne");
+
+  //   // content.style.backgroundColor = "green"
+  //   active = true;
+  // }
+
+  // content.classList.toggle('colorOne')
+
+
+
+  // console.log(
+  //   content.classList.contains("salom")
+  // );
+// };
+
+let img = document.querySelector('img')
+let imgLink = "https://lookw.net/24/2497/1639414399-1001-www.lookw.net.jpg"
+let imgLinkTwo = "https://thumbs.dreamstime.com/b/polar-bear-wallpaper-hd-wallpapers-ai-polar-bear-wallpaper-hd-wallpapers-297800380.jpg"
+
+btnTwo.onclick = () => {
+  // txt.innerHTML = "Hello"
+  // let atr =  img.getAttribute('id')
+  // img.setAttribute("alt", "salom")
+  // console.log(atr);
+  
+  if (active) {
+    active = false 
+    img.setAttribute("src", imgLink)
+  } else {
+    active = true
+    img.setAttribute("src", imgLinkTwo)
+
+  }
+
+  console.log(
+    img.hasAttribute('name')
+  );
+
+}
