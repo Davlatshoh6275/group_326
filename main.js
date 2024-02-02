@@ -1221,35 +1221,33 @@
 //   tag
 // );
 
-let btn = document.querySelector(".btn");
-let btnTwo = document.querySelector(".btnTwo");
-let content = document.querySelector(".content");
-let txt = document.querySelector(".txt");
+// let btn = document.querySelector(".btn");
+// let btnTwo = document.querySelector(".btnTwo");
+// let content = document.querySelector(".content");
+// let txt = document.querySelector(".txt");
 
-let active = false;
+// let active = false;
 
 // btn.onclick = () => {
 //   txt.innerHTML = "salom"
-  // if (active == true) {
-  //   // content.style.backgroundColor = "red"
-  //   content.classList.add("colorOne");
-  //   content.classList.remove("colorTwo");
-  //   active = false;
-  // } else {
-  //   content.classList.add("colorTwo");
-  //   content.classList.remove("colorOne");
+// if (active == true) {
+//   // content.style.backgroundColor = "red"
+//   content.classList.add("colorOne");
+//   content.classList.remove("colorTwo");
+//   active = false;
+// } else {
+//   content.classList.add("colorTwo");
+//   content.classList.remove("colorOne");
 
-  //   // content.style.backgroundColor = "green"
-  //   active = true;
-  // }
+//   // content.style.backgroundColor = "green"
+//   active = true;
+// }
 
-  // content.classList.toggle('colorOne')
+// content.classList.toggle('colorOne')
 
-
-
-  // console.log(
-  //   content.classList.contains("salom")
-  // );
+// console.log(
+//   content.classList.contains("salom")
+// );
 // };
 
 // let img = document.querySelector('img')
@@ -1261,9 +1259,9 @@ let active = false;
 //   // let atr =  img.getAttribute('id')
 //   // img.setAttribute("alt", "salom")
 //   // console.log(atr);
-  
+
 //   if (active) {
-//     active = false 
+//     active = false
 //     img.setAttribute("src", imgLink)
 //   } else {
 //     active = true
@@ -1276,3 +1274,41 @@ let active = false;
 //   );
 
 // }
+
+let btn = document.querySelector(".btn");
+let box = document.querySelector(".box");
+
+// btn.onclick = () => {
+//   document.body.style.backgroundColor = "red"
+// }
+
+// btn.addEventListener('click', () => {
+//   document.body.style.backgroundColor = "red"
+// })
+
+// function click() {
+//   console.log("Salom");
+//   document.body.style.backgroundColor = "red";
+// }
+
+
+// box.onmouseenter = () => {
+//   box.style.backgroundColor = "red";
+//   console.log("salom");
+// }
+
+box.addEventListener("mouseenter", () => {
+  box.style.backgroundColor = "red";
+  console.log("salom");
+})
+
+// box.onmouseleave = () => {
+//   console.log("hello");
+//   box.style.backgroundColor = "green";
+// }
+
+box.addEventListener("mouseleave", () => {
+  console.log("hello");
+  box.style.backgroundColor = "green";
+
+})
