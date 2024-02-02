@@ -1291,24 +1291,53 @@ let box = document.querySelector(".box");
 //   document.body.style.backgroundColor = "red";
 // }
 
-
 // box.onmouseenter = () => {
 //   box.style.backgroundColor = "red";
 //   console.log("salom");
 // }
 
-box.addEventListener("mouseenter", () => {
-  box.style.backgroundColor = "red";
-  console.log("salom");
-})
+// box.addEventListener("mouseenter", () => {
+//   box.style.backgroundColor = "red";
+//   console.log("salom");
+// });
 
-// box.onmouseleave = () => {
+// // box.onmouseleave = () => {
+// //   console.log("hello");
+// //   box.style.backgroundColor = "green";
+// // }
+
+// box.addEventListener("mouseleave", () => {
 //   console.log("hello");
+// });
+
+// box.ondblclick = () => {
 //   box.style.backgroundColor = "green";
-// }
+// };
 
-box.addEventListener("mouseleave", () => {
-  console.log("hello");
-  box.style.backgroundColor = "green";
+// box.addEventListener("dblclick", () => {
+//   box.style.backgroundColor = "green";
+// })
 
+let inp = document.querySelector("input");
+let select = document.querySelector("select");
+
+// inp.onkeyup = (event) => {
+//   console.log(event.target.value);
+// };
+
+// inp.addEventListener('keyup', (event) => {
+//   console.log(event.target.value);
+// })
+
+inp.onchange = (e) => {
+  console.log(
+    e.target.value
+  );
+}
+
+select.addEventListener("change", (e) => {
+  console.log(
+    e.target.value
+  );
 })
+
