@@ -1252,27 +1252,27 @@ let active = false;
   // );
 // };
 
-let img = document.querySelector('img')
-let imgLink = "https://lookw.net/24/2497/1639414399-1001-www.lookw.net.jpg"
-let imgLinkTwo = "https://thumbs.dreamstime.com/b/polar-bear-wallpaper-hd-wallpapers-ai-polar-bear-wallpaper-hd-wallpapers-297800380.jpg"
+// let img = document.querySelector('img')
+// let imgLink = "https://lookw.net/24/2497/1639414399-1001-www.lookw.net.jpg"
+// let imgLinkTwo = "https://thumbs.dreamstime.com/b/polar-bear-wallpaper-hd-wallpapers-ai-polar-bear-wallpaper-hd-wallpapers-297800380.jpg"
 
-btnTwo.onclick = () => {
-  // txt.innerHTML = "Hello"
-  // let atr =  img.getAttribute('id')
-  // img.setAttribute("alt", "salom")
-  // console.log(atr);
+// btnTwo.onclick = () => {
+//   // txt.innerHTML = "Hello"
+//   // let atr =  img.getAttribute('id')
+//   // img.setAttribute("alt", "salom")
+//   // console.log(atr);
   
-  if (active) {
-    active = false 
-    img.setAttribute("src", imgLink)
-  } else {
-    active = true
-    img.setAttribute("src", imgLinkTwo)
+//   if (active) {
+//     active = false 
+//     img.setAttribute("src", imgLink)
+//   } else {
+//     active = true
+//     img.setAttribute("src", imgLinkTwo)
 
-  }
+//   }
 
-  console.log(
-    img.hasAttribute('name')
-  );
+//   console.log(
+//     img.hasAttribute('name')
+//   );
 
-}
+// }
