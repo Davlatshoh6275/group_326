@@ -1360,7 +1360,7 @@ let priceTxt = document.querySelector('.number')
 
 let price = 1999
 
-let big = 1200
+let big = 1200  
 let medium = 600
 let small = 200
 
