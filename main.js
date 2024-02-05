@@ -1273,10 +1273,7 @@
 //     img.hasAttribute('name')
 //   );
 
-// }
 
-let btn = document.querySelector(".btn");
-let box = document.querySelector(".box");
 
 // btn.onclick = () => {
 //   document.body.style.backgroundColor = "red"
@@ -1318,8 +1315,8 @@ let box = document.querySelector(".box");
 //   box.style.backgroundColor = "green";
 // })
 
-let inp = document.querySelector("input");
-let select = document.querySelector("select");
+// let inp = document.querySelector("input");
+// let select = document.querySelector("select");
 
 // inp.onkeyup = (event) => {
 //   console.log(event.target.value);
@@ -1329,15 +1326,49 @@ let select = document.querySelector("select");
 //   console.log(event.target.value);
 // })
 
-inp.onchange = (e) => {
-  console.log(
-    e.target.value
-  );
+// inp.onchange = (e) => {
+//   console.log(
+//     e.target.value
+//   );
+// }
+
+// select.addEventListener("change", (e) => {
+//   console.log(
+//     e.target.value
+//   );
+// })
+
+
+
+let btnWhite = document.querySelector('.btnWhite')
+let btnGrey = document.querySelector('#seri')
+let txt = document.querySelector(".txt")
+
+
+btnWhite.onclick = () => {
+  txt.innerHTML = "white"
 }
 
-select.addEventListener("change", (e) => {
-  console.log(
-    e.target.value
-  );
-})
+btnGrey.onclick = () => {
+  txt.innerHTML = "Space Gray"
+}
 
+
+
+let btns = document.querySelectorAll(".h2")
+let priceTxt = document.querySelector('.number')
+
+let price = 1999
+
+let big = 1200
+let medium = 600
+let small = 200
+
+
+for(let item of btns) {
+  item.onclick = () => {
+    priceTxt.innerHTML = `$${price + big}`
+  }
+}
+
+console.log(btns);
