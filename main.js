@@ -1273,8 +1273,6 @@
 //     img.hasAttribute('name')
 //   );
 
-
-
 // btn.onclick = () => {
 //   document.body.style.backgroundColor = "red"
 // }
@@ -1338,37 +1336,53 @@
 //   );
 // })
 
+// let btnWhite = document.querySelector(".btnWhite");
+// let btnGrey = document.querySelector("#seri");
+// let txt = document.querySelector(".txt");
+// let img = document.querySelector(".img");
+
+// btnWhite.onclick = () => {
+//   txt.innerHTML = "white";
+//   img.setAttribute(
+//     "src",
+//     "https://s3-alpha-sig.figma.com/img/9581/edda/696f087203dbc41896f9d180cf9d0435?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DN96JelZhkmQC88oYNi-miXdUGTI7RBth2wK4CcEutDwBbu1LpyiGH~j3qRbNIGLZeGnskKpGzEIZJqllTJv~Sh7cBuRteeqyyIjQlJP-eZHXM4-jMeodwC7Ky6yYmpd7Kg83~eJrNjT4ElB5uF6uTviVaGcNc9DUnO1M~9InUZ-ewiyeC9d0GDUuVM5r02RVTp8PRmaCAyDRv4OFl-uort0Rd9weEaaJr-1FJqDLbqtKn5kCbRhLdPwBwalMC8Ws0-FUS9I~SNCVc-267cPG5biLjpsTCvSOgqT7GwTwdz6WRq~YjO-KJRF08dwb~zKYl7QjzU8GkR5A18rznmamg__"
+//   );
+// };
+
+// btnGrey.onclick = () => {
+//   txt.innerHTML = "Space Gray";
+//   img.setAttribute(
+//     "src",
+//     "https://s3-alpha-sig.figma.com/img/9f71/2fbe/77eca8b2420bb1d5e95728168d6e6c92?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BPayE5K68Zj8w7E7xwsEwuEp19jFjhCCTdketSGq-Tz~7tGwmKSJ9qVv7f2uJbE-Fpe~JCvy9KoOU~kDFm8X1H6xRCHQsvOAlyGqurmsFfTwOQmNnOJGerrdXqu7OSvo2owKPo-0hC9DEVqEfgS99JIpoQ-kgPIw0Kelq1qBGAKTNrQU567FnRPZei0IlhBVjjELtwFZaef5D9MgSaIFuOyGQbA1wq~rQvM-g8NqXwlITKDw5H3nU84eAV4kDcdSEAiA8Q57ZZtwWYyQ5ueAs0iEYs4zJhAP31mzyp6cv~8DOV1-cOZMLeJpKN6GWE6Ea9EBdcl63KBZ4F53g4zx2w__"
+//   );
+// };
+
+// let btns = document.querySelectorAll(".h2");
+// let priceTxt = document.querySelector(".number");
+
+// let price = "1.999";
+
+// let big = "1.200";
+// let medium = 600;
+// let small = 200;
+
+// for (let item of btns) {
+//   item.onclick = () => {
+//     if (item.classList.contains("none")) {
+//       priceTxt.innerHTML = `$${price}`;
+//     }
+//     if (item.classList.contains("small")) {
+//       priceTxt.innerHTML = `$${price + small}`;
+//     }
+//     if (item.classList.contains("medium")) {
+//       priceTxt.innerHTML = `$${price + medium}`;
+//     }
+//     if (item.classList.contains("big")) {
+//       priceTxt.innerHTML = `$${price + big}`;
+//     }
+//   };
+// }
+
+// console.log(price + small);
 
 
-let btnWhite = document.querySelector('.btnWhite')
-let btnGrey = document.querySelector('#seri')
-let txt = document.querySelector(".txt")
-
-
-btnWhite.onclick = () => {
-  txt.innerHTML = "white"
-}
-
-btnGrey.onclick = () => {
-  txt.innerHTML = "Space Gray"
-}
-
-
-
-let btns = document.querySelectorAll(".h2")
-let priceTxt = document.querySelector('.number')
-
-let price = 1999
-
-let big = 1200  
-let medium = 600
-let small = 200
-
-
-for(let item of btns) {
-  item.onclick = () => {
-    priceTxt.innerHTML = `$${price + big}`
-  }
-}
-
-console.log(btns);
