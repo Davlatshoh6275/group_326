@@ -1385,6 +1385,69 @@
 
 // console.log(price + small);
 
+// let hour = document.querySelector(".hour");
+// let minut = document.querySelector(".minut");
+// let second = document.querySelector(".second");
+// let start = document.querySelector(".start");
+// let stopBtn = document.querySelector(".stop");
+// let reset = document.querySelector(".reset");
+
+// let h = 0;
+// let m = 0;
+// let s = 0;
+// let interval;
+
+// function zero(n) {
+//   if (n < 10) {
+//     return (n = `0${n}`);
+//   } else {
+//     return n;
+//   }
+// }
+// start.addEventListener("click", () => {
+//   start.disabled = true
+
+//   interval = setInterval(() => {
+// if (s < 10) {
+// } else {
+//   second.innerHTML = s;
+// }
+
+// if (m < 10) {
+//   minut.innerHTML = `0${m}`;
+// } else {
+//   minut.innerHTML = m;
+// }
+//     s++;
+//     second.innerHTML = zero(s);
+//     if (s > 59) {
+//       m++;
+//       minut.innerHTML = zero(m);
+//       s = 0;
+//     } else if (m > 59) {
+//       h++;
+//       hour.innerHTML = zero(h);
+//       m = 0;
+//       s = 0;
+//     }
+//   }, 1000);
+// });
+
+// stopBtn.addEventListener("click", () => {
+//   start.disabled = false
+//   clearInterval(interval);
+// });
+
+// reset.addEventListener("click", () => {
+//   clearInterval(interval);
+//   m = 0;
+//   h = 0;
+//   s = 0;
+//   minut.innerHTML = "00";
+//   second.innerHTML = "00";
+//   hour.innerHTML = "00";
+// });
+
 let hour = document.querySelector(".hour");
 let minut = document.querySelector(".minut");
 let second = document.querySelector(".second");
@@ -1404,43 +1467,3 @@ function zero(n) {
     return n;
   }
 }
-start.addEventListener("click", () => {
-  interval = setInterval(() => {
-    // if (s < 10) {
-    // } else {
-    //   second.innerHTML = s;
-    // }
-
-    // if (m < 10) {
-    //   minut.innerHTML = `0${m}`;
-    // } else {
-    //   minut.innerHTML = m;
-    // }
-    s++;
-    second.innerHTML = zero(s);
-    if (s > 59) {
-      m++;
-      minut.innerHTML = zero(m);
-      s = 0;
-    } else if (m > 59) {
-      h++;
-      hour.innerHTML = zero(h);
-      m = 0;
-      s = 0;
-    }
-  }, 1);
-});
-
-stopBtn.addEventListener("click", () => {
-  clearInterval(interval);
-});
-
-reset.addEventListener("click", () => {
-  clearInterval(interval);
-  m = 0;
-  h = 0;
-  s = 0;
-  minut.innerHTML = "00";
-  second.innerHTML = "00";
-  hour.innerHTML = "00";
-});
