@@ -1451,9 +1451,18 @@
 let hour = document.querySelector(".hour");
 let minut = document.querySelector(".minut");
 let second = document.querySelector(".second");
+
 let start = document.querySelector(".start");
 let stopBtn = document.querySelector(".stop");
 let reset = document.querySelector(".reset");
+
+let btnPlusH = document.querySelector(".btnPlusH");
+let btnPlusM = document.querySelector(".btnPlusM");
+let btnPlusS = document.querySelector(".btnPlusS");
+
+let btnMinusM = document.querySelector(".btnMinusM");
+let btnMinusH = document.querySelector(".btnMinusH");
+let btnMinusS = document.querySelector(".btnMinusS");
 
 let h = 0;
 let m = 0;
@@ -1467,3 +1476,73 @@ function zero(n) {
     return n;
   }
 }
+
+btnPlusH.addEventListener("click", () => {
+  h++;
+  hour.innerHTML = zero(h);
+});
+
+btnPlusM.addEventListener("click", () => {
+  m++;
+  minut.innerHTML = zero(m);
+});
+
+btnPlusS.addEventListener("click", () => {
+  s++;
+  second.innerHTML = zero(s);
+});
+
+btnMinusM.addEventListener("click", () => {
+  m--;
+
+  if (m < 0) {
+    m = 0;
+    minut.innerHTML = "00";
+  } else {
+    minut.innerHTML = zero(m);
+  }
+});
+
+btnMinusH.addEventListener("click", () => {
+  h--;
+
+  if (h < 0) {
+    h = 0;
+    hour.innerHTML = "00";
+  } else {
+    hour.innerHTML = zero(h);
+  }
+});
+btnMinusS.addEventListener("click", () => {
+  s--;
+
+  if (s < 0) {
+    s = 0;
+    second.innerHTML = "00";
+  } else {
+    second.innerHTML = zero(s);
+  }
+});
+
+start.addEventListener("click", () => {
+  interval = setInterval(() => {
+    s--;
+    second.innerHTML = zero(s);
+
+    if (s < 0) {
+      m--;
+      minut.innerHTML = zero(m);
+      s = 59;
+      second.innerHTML = zero(s);
+    } else if (m < 0) {
+      h--;
+      hour.innerHTML = zero(h);
+      m = 59;
+      minut.innerHTML = zero(m);
+      s = 59;
+      second.innerHTML = zero(s);
+    } else if (m == 0 && h == 0 && s == 0) {
+      clearInterval(interval);
+    }
+  }, 1000);
+});
