@@ -1547,11 +1547,90 @@
 //   }, 1000);
 // });
 
-let plusA = document.querySelector(".plusA");
-let minusA = document.querySelector(".minusA");
-let plusB = document.querySelector(".plusB");
-let minusB = document.querySelector(".minusB");
-let plusD = document.querySelector(".plusD");
-let minusD = document.querySelector(".minusD");
-let plusC = document.querySelector(".plusC");
-let minusC = document.querySelector(".minusC");
+// let plusA = document.querySelector(".plusA");
+// let minusA = document.querySelector(".minusA");
+// let plusB = document.querySelector(".plusB");
+// let minusB = document.querySelector(".minusB");
+// let plusD = document.querySelector(".plusD");
+// let minusD = document.querySelector(".minusD");
+// let plusC = document.querySelector(".plusC");
+// let minusC = document.querySelector(".minusC");
+
+// let plus = document.querySelector(".plus");
+// let minus = document.querySelector(".minus");
+
+// let count1 = document.querySelector("#count1");
+// let count2 = document.querySelector("#count2");
+// let count3 = document.querySelector("#count3");
+// let count4 = document.querySelector("#count4");
+
+// plus.addEventListener("click", () => {
+//   count1.innerHTML++;
+//   count2.innerHTML++;
+//   count3.innerHTML++;
+//   count4.innerHTML++;
+// });
+
+// minus.addEventListener("click", () => {
+//   count1.innerHTML--;
+//   count2.innerHTML--;
+//   count3.innerHTML--;
+//   count4.innerHTML--;
+// });
+
+// plusA.addEventListener("click", () => {
+//   count1.innerHTML++;
+// });
+// minusA.addEventListener("click", () => {
+//   if (count1.innerHTML == 0) {
+//     count1.innerHTML = 0;
+//   } else {
+//     count1.innerHTML--;
+//   }
+// });
+
+// plusB.addEventListener("click", () => {
+//   count2.innerHTML++;
+// });
+// minusB.addEventListener("click", () => {
+//   if (count2.innerHTML <= 0) {
+//     count2.innerHTML = 0;
+//   } else {
+//     count2.innerHTML--;
+//   }
+// });
+
+// plusD.addEventListener("click", () => {
+//   count3.innerHTML++;
+// });
+// minusD.addEventListener("click", () => {
+//   if (count3.innerHTML <= 0) {
+//     count3.innerHTML = 0;
+//   } else {
+//     count3.innerHTML--;
+//   }
+// });
+// plusC.addEventListener("click", () => {
+//   count4.innerHTML++;
+// });
+// minusC.addEventListener("click", () => {
+//   if (count4.innerHTML <= 0) {
+//     count4.innerHTML = 0;
+//   } else {
+//     count4.innerHTML--;
+//   }
+// });
+
+let openM = document.querySelector(".openM");
+let modal = document.querySelector(".modal");
+
+openM.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+
+window.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    modal.style.display = "none";
+  }
+});
