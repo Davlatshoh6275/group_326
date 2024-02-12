@@ -1448,101 +1448,110 @@
 //   hour.innerHTML = "00";
 // });
 
-let hour = document.querySelector(".hour");
-let minut = document.querySelector(".minut");
-let second = document.querySelector(".second");
+// let hour = document.querySelector(".hour");
+// let minut = document.querySelector(".minut");
+// let second = document.querySelector(".second");
 
-let start = document.querySelector(".start");
-let stopBtn = document.querySelector(".stop");
-let reset = document.querySelector(".reset");
+// let start = document.querySelector(".start");
+// let stopBtn = document.querySelector(".stop");
+// let reset = document.querySelector(".reset");
 
-let btnPlusH = document.querySelector(".btnPlusH");
-let btnPlusM = document.querySelector(".btnPlusM");
-let btnPlusS = document.querySelector(".btnPlusS");
+// let btnPlusH = document.querySelector(".btnPlusH");
+// let btnPlusM = document.querySelector(".btnPlusM");
+// let btnPlusS = document.querySelector(".btnPlusS");
 
-let btnMinusM = document.querySelector(".btnMinusM");
-let btnMinusH = document.querySelector(".btnMinusH");
-let btnMinusS = document.querySelector(".btnMinusS");
+// let btnMinusM = document.querySelector(".btnMinusM");
+// let btnMinusH = document.querySelector(".btnMinusH");
+// let btnMinusS = document.querySelector(".btnMinusS");
 
-let h = 0;
-let m = 0;
-let s = 0;
-let interval;
+// let h = 0;
+// let m = 0;
+// let s = 0;
+// let interval;
 
-function zero(n) {
-  if (n < 10) {
-    return (n = `0${n}`);
-  } else {
-    return n;
-  }
-}
+// function zero(n) {
+//   if (n < 10) {
+//     return (n = `0${n}`);
+//   } else {
+//     return n;
+//   }
+// }
 
-btnPlusH.addEventListener("click", () => {
-  h++;
-  hour.innerHTML = zero(h);
-});
+// btnPlusH.addEventListener("click", () => {
+//   h++;
+//   hour.innerHTML = zero(h);
+// });
 
-btnPlusM.addEventListener("click", () => {
-  m++;
-  minut.innerHTML = zero(m);
-});
+// btnPlusM.addEventListener("click", () => {
+//   m++;
+//   minut.innerHTML = zero(m);
+// });
 
-btnPlusS.addEventListener("click", () => {
-  s++;
-  second.innerHTML = zero(s);
-});
+// btnPlusS.addEventListener("click", () => {
+//   s++;
+//   second.innerHTML = zero(s);
+// });
 
-btnMinusM.addEventListener("click", () => {
-  m--;
+// btnMinusM.addEventListener("click", () => {
+//   m--;
 
-  if (m < 0) {
-    m = 0;
-    minut.innerHTML = "00";
-  } else {
-    minut.innerHTML = zero(m);
-  }
-});
+//   if (m < 0) {
+//     m = 0;
+//     minut.innerHTML = "00";
+//   } else {
+//     minut.innerHTML = zero(m);
+//   }
+// });
 
-btnMinusH.addEventListener("click", () => {
-  h--;
+// btnMinusH.addEventListener("click", () => {
+//   h--;
 
-  if (h < 0) {
-    h = 0;
-    hour.innerHTML = "00";
-  } else {
-    hour.innerHTML = zero(h);
-  }
-});
-btnMinusS.addEventListener("click", () => {
-  s--;
+//   if (h < 0) {
+//     h = 0;
+//     hour.innerHTML = "00";
+//   } else {
+//     hour.innerHTML = zero(h);
+//   }
+// });
+// btnMinusS.addEventListener("click", () => {
+//   s--;
 
-  if (s < 0) {
-    s = 0;
-    second.innerHTML = "00";
-  } else {
-    second.innerHTML = zero(s);
-  }
-});
+//   if (s < 0) {
+//     s = 0;
+//     second.innerHTML = "00";
+//   } else {
+//     second.innerHTML = zero(s);
+//   }
+// });
 
-start.addEventListener("click", () => {
-  interval = setInterval(() => {
-    s--;
-    second.innerHTML = zero(s);
+// start.addEventListener("click", () => {
+//   interval = setInterval(() => {
+//     s--;
+//     second.innerHTML = zero(s);
 
-    if (s < 0) {
-      m--;
-      minut.innerHTML = zero(m);
-      s = 59;
-      second.innerHTML = zero(s);
-    } else if (m < 0) {
-      h--;
-      hour.innerHTML = zero(h);
-      m = 59;
-      minut.innerHTML = zero(m);
-      s = 59;
-      second.innerHTML = zero(s);
-    } else if (m == 0 && h == 0 && s == 0) {
-      clearInterval(interval);
-    }
-  }, 1000);
-});
+//     if (s < 0) {
+//       m--;
+//       minut.innerHTML = zero(m);
+//       s = 59;
+//       second.innerHTML = zero(s);
+//     } else if (m < 0) {
+//       h--;
+//       hour.innerHTML = zero(h);
+//       m = 59;
+//       minut.innerHTML = zero(m);
+//       s = 59;
+//       second.innerHTML = zero(s);
+//     } else if (m == 0 && h == 0 && s == 0) {
+//       clearInterval(interval);
+//     }
+//   }, 1000);
+// });
+
+let plusA = document.querySelector(".plusA");
+let minusA = document.querySelector(".minusA");
+let plusB = document.querySelector(".plusB");
+let minusB = document.querySelector(".minusB");
+let plusD = document.querySelector(".plusD");
+let minusD = document.querySelector(".minusD");
+let plusC = document.querySelector(".plusC");
+let minusC = document.querySelector(".minusC");
