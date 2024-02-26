@@ -1621,16 +1621,63 @@
 //   }
 // });
 
-let openM = document.querySelector(".openM");
-let modal = document.querySelector(".modal");
+// let openM = document.querySelector(".openM");
+// let modal = document.querySelector(".modal");
 
-openM.addEventListener("click", () => {
-  modal.style.display = "flex";
+// openM.addEventListener("click", () => {
+//   modal.style.display = "flex";
+// });
+
+// window.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("modal")) {
+//     modal.style.display = "none";
+//   }
+// });
+
+const plus = document.querySelector(".plus");
+const count = document.querySelector(".count");
+const minus = document.querySelector(".minus");
+
+
+function getItem() {
+  count.innerHTML = JSON.parse(localStorage.getItem("count") || "0")
+}
+
+getItem()
+
+plus.addEventListener("click", () => {
+  count.innerHTML = ++count.innerHTML;
+  localStorage.setItem("count", JSON.stringify(count.innerHTML));
+
+  location.pathname = "/main.html"
+});
+
+minus.addEventListener("click", () => {
+  count.innerHTML = --count.innerHTML;
+  localStorage.setItem("count", JSON.stringify(count.innerHTML));
 });
 
 
-window.addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal")) {
-    modal.style.display = "none";
-  }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log({
+//   name: "Davlatshoh",
+//   age: 25,
+// });
+
+// console.log(
+//   JSON.stringify({
+//     name: "Davlatshoh",
+//     age: 25,
+//   })
+// );
