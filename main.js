@@ -1634,41 +1634,27 @@
 //   }
 // });
 
-const plus = document.querySelector(".plus");
-const count = document.querySelector(".count");
-const minus = document.querySelector(".minus");
+// const plus = document.querySelector(".plus");
+// const count = document.querySelector(".count");
+// const minus = document.querySelector(".minus");
 
+// function getItem() {
+//   count.innerHTML = JSON.parse(localStorage.getItem("count") || "0")
+// }
 
-function getItem() {
-  count.innerHTML = JSON.parse(localStorage.getItem("count") || "0")
-}
+// getItem()
 
-getItem()
+// plus.addEventListener("click", () => {
+//   count.innerHTML = ++count.innerHTML;
+//   localStorage.setItem("count", JSON.stringify(count.innerHTML));
 
-plus.addEventListener("click", () => {
-  count.innerHTML = ++count.innerHTML;
-  localStorage.setItem("count", JSON.stringify(count.innerHTML));
+//   location.pathname = "/main.html"
+// });
 
-  location.pathname = "/main.html"
-});
-
-minus.addEventListener("click", () => {
-  count.innerHTML = --count.innerHTML;
-  localStorage.setItem("count", JSON.stringify(count.innerHTML));
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
+// minus.addEventListener("click", () => {
+//   count.innerHTML = --count.innerHTML;
+//   localStorage.setItem("count", JSON.stringify(count.innerHTML));
+// });
 
 // console.log({
 //   name: "Davlatshoh",
@@ -1681,3 +1667,60 @@ minus.addEventListener("click", () => {
 //     age: 25,
 //   })
 // );
+
+const conteiner = document.querySelector(".conteiner");
+// let h1 = document.createElement("h1");
+
+// h1.innerHTML = "salom";
+
+// // h1.style.color = "red"
+// // h1.style.fontSize = "100px"
+// h1.classList.add("create");
+
+// // conteiner.appendChild(h1);
+// conteiner.prepend(h1);
+
+// console.log(h1);
+
+const content = document.querySelector(".content");
+const btn = document.querySelector(".add");
+let count = 0;
+let images = [
+  "https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg",
+  "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+  "https://img.freepik.com/free-photo/fresh-yellow-daisy-single-flower-close-up-beauty-generated-by-ai_188544-15543.jpg",
+  "https://www.imageshine.in/uploads/sub_category/free-hd-desktop-wallpapers-1920x1080.jpg",
+  "https://wallpapers.com/images/hd/hd-sunset-at-beach-w5ped7x6g3uo2o76.jpg",
+];
+
+btn.addEventListener("click", () => {
+  // console.log("click");
+  // count++;
+
+  // console.log(count);
+
+  // let div = document.createElement("div");
+  // let h1 = document.createElement("h1");
+
+  // div.style.width = "200px";
+  // div.style.height = "200px";
+  // div.style.backgroundColor = "red";
+
+  // h1.innerHTML = count;
+
+  // div.appendChild(h1);
+  // content.appendChild(div);
+  // console.log(div);
+
+  let rnd = Math.floor(Math.random() * 4)
+
+  
+
+  let img = document.createElement("img");
+
+  img.setAttribute("src", images[rnd]);
+
+  img.style.width = "200px";
+  img.style.height = "200px";
+  content.appendChild(img);
+});

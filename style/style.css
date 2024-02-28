@@ -357,13 +357,26 @@
 .conteiner {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
   gap: 20px;
 }
 
 button {
-  width: 50px;
+  width: 150px;
   height: 30px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.create {
+  font-size: 100px;
+  color: red;
+  font-family: sans-serif;
 }
