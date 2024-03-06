@@ -2040,9 +2040,94 @@
 
 // fetch GET method
 
+// let data;
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((response) => response.json())
+//   .then((post) => {
+//     data = post;
+//     getData(data);
+//   });
+
+// function getData(data) {
+//   console.log(data);
+
+//   for (let item of data) {
+//     let h1 = document.createElement("h1");
+//     h1.innerHTML = item.title;
+
+//     document.body.appendChild(h1);
+//   }
+// }
+
+// // /fetch POST method
+
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     userId: 1,
+//     title: "Davlatshoh",
+//     body: "lorem ipsum",
+//   }),
+// })
+//   .then((response) => console.log(response.json()))
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// // method DELETE
+
+// let elemId = 1;
+
+// fetch(`https://jsonplaceholder.typicode.com/posts/${elemId}`, {
+//   method: "DELETE",
+// })
+//   .then((response) => console.log(response.json()))
+//   .catch((err) => console.log(err));
+
+// // method PATCH
+
+// let patchElemID = 1;
+
+// fetch(`https://jsonplaceholder.typicode.com/posts/${patchElemID}`, {
+//   method: "PATCH",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     body: "Davlatshoh",
+//   }),
+// })
+//   .then((response) => console.log(response.json()))
+//   .catch((err) => console.log(err));
+
+// // method PUT
+
+// let putElemID = 1;
+
+// fetch(`https://jsonplaceholder.typicode.com/posts/${putElemID}`, {
+//   method: "PUT",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     userId: 1,
+//     id: putElemID,
+//     title: "Davlatshoh",
+//     body: "Pardaqulov",
+//   }),
+// })
+//   .then((response) => console.log(response.json()))
+//   .catch((err) => console.log(err));
+
+//
+
 let data;
 
-fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("http://localhost:5050/users")
   .then((response) => response.json())
   .then((post) => {
     data = post;
@@ -2051,74 +2136,59 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
 function getData(data) {
   console.log(data);
-
   for (let item of data) {
     let h1 = document.createElement("h1");
-    h1.innerHTML = item.title;
+    let btn = document.createElement("button");
+    let box = document.createElement("div");
 
-    document.body.appendChild(h1);
+    btn.innerHTML = "dalete";
+    h1.innerHTML = item.name;
+    btn.id = item.id;
+
+    btn.onclick = (e) => {
+      deleteItem(e.target.id);
+    };
+
+    box.appendChild(h1);
+    box.appendChild(btn);
+    document.body.appendChild(box);
   }
 }
+function deleteItem(elemId) {
+  fetch(`http://localhost:5050/users/${elemId}`, {
+    method: "DELETE",
+  })
+    .then((response) => console.log(response.json()))
+    .catch((err) => console.log(err));
+  // getData();
+}
 
-// /fetch POST method
+let elemId = 1;
 
-fetch("https://jsonplaceholder.typicode.com/posts", {
+fetch(`http://localhost:5050/users/${elemId}`, {
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name: "Davlatshoh",
+  }),
+})
+  .then((response) => console.log(response.json()))
+  .catch((err) => console.log(err));
+
+fetch("http://localhost:5050/users", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    userId: 1,
-    title: "Davlatshoh",
-    body: "lorem ipsum",
+    id: "2",
+    name: "Sarvar",
+    age: 16,
   }),
 })
   .then((response) => console.log(response.json()))
   .catch((error) => {
     console.log(error);
   });
-
-// method DELETE
-
-let elemId = 1;
-
-fetch(`https://jsonplaceholder.typicode.com/posts/${elemId}`, {
-  method: "DELETE",
-})
-  .then((response) => console.log(response.json()))
-  .catch((err) => console.log(err));
-
-// method PATCH
-
-let patchElemID = 1;
-
-fetch(`https://jsonplaceholder.typicode.com/posts/${patchElemID}`, {
-  method: "PATCH",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    body: "Davlatshoh",
-  }),
-})
-  .then((response) => console.log(response.json()))
-  .catch((err) => console.log(err));
-
-// method PUT
-
-let putElemID = 1;
-
-fetch(`https://jsonplaceholder.typicode.com/posts/${putElemID}`, {
-  method: "PUT",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    userId: 1,
-    id: putElemID,
-    title: "Davlatshoh",
-    body: "Pardaqulov",
-  }),
-})
-  .then((response) => console.log(response.json()))
-  .catch((err) => console.log(err));
